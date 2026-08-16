@@ -1,0 +1,11 @@
+[
+  {
+    "label": 7,
+    "class_name": "AM-DSB",
+    "t0": 0.0,
+    "duration": 1.8,
+    "center_frequency": 0.0,
+    "bandwidth": 2400000.0,
+    "area": 4096
+  }
+]

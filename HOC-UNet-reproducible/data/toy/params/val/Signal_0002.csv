@@ -1,0 +1,3 @@
+Type,Start_s,Duration_s,Freq_Hz,Bandwidth_Hz
+QPSK,0.84375,0.478125,-187500.0,450000.0
+AM-DSB,0.28125,0.50625,-18750.0,262500.0

@@ -1,0 +1,40 @@
+classes:
+  - background
+  - BPSK
+  - QPSK
+  - 8PSK
+  - 16QAM
+  - 64QAM
+  - FM
+  - AM-DSB
+  - AM-SSB
+  - MSK
+
+model:
+  in_channels: 3
+  num_classes: 10
+  base_channels: 64
+  bilinear: true
+  use_hfp: true
+  use_hfp_dct: false
+  use_hfp_skip: true
+  use_omni_layers: [0, 1, 2, 3]
+  use_ca_skip: true
+  ca_reduction: 32
+  omni_kernel_size: 3
+  omni_reduction: 0.0625
+  omni_kernel_num: 4
+  omni_residual_weight: 0.5
+
+data:
+  image_size: [512, 512]
+  time_span: 1.8
+  freq_min: -1200000.0
+  freq_max: 1200000.0
+
+train:
+  epochs: 80
+  batch_size: 4
+  lr: 0.0003
+  weight_decay: 0.0001
+  ignore_index: 255

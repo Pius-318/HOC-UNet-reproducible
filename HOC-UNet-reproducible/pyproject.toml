@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hoc-unet-reproducible"
+version = "0.1.0"
+description = "Reproducible PyTorch implementation of HOC-UNet for wireless wideband time-frequency segmentation."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+authors = [
+  {name = "Pius"}
+]
+dependencies = [
+  "numpy>=1.23",
+  "pillow>=9.0",
+  "pyyaml>=6.0",
+  "torch>=1.10"
+]
+
+[project.optional-dependencies]
+dct = ["torch-dct>=0.1.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
